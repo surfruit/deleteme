@@ -67,23 +67,43 @@ Business-Ready: CSV exports are optimized for seamless import into Google Sheets
 
 ## [ ] Lightweight local Web UI
 
-### 🤝 Contributing – Adding a New Site
+### 🤝 🤝 Contributing – Growing the Database
 
-We welcome community contributions to expand our database! To add a service, update deleteme/sites.py:
+We welcome community contributions to make Deleteme the most comprehensive privacy tool. To add a new service, follow these steps:
 
-```SITES_DATA = {
+1. Update the Database
+   Open `deleteme/sites.py` and add a new entry to the `SITES_DATA` dictionary using this clean format:
+
+```python
+SITES_DATA = {
     "SERVICE_NAME": (
-        "[https://example.com/user/](https://example.com/user/){}",           # Profile URL template
-        "[https://example.com/account/delete](https://example.com/account/delete)"     # Direct deletion link
+        "https://example.com/user/{}",           # Profile URL ({} is the username)
+        "https://example.com/account/delete"     # Direct link to deletion page
     ),
 }
 ```
 
-## <p>Then, open a Pull Request with the tag feat: added Example.com support</p>
+2. Sync & Update
+   If you want to update your local database with the latest community-added sites, simply run our built-in sync tool:
+
+```
+python sync.py
+```
+
+This ensures our engine always has latest deletion links. 3. Submit a Pull Request
+Fork the repository.
+
+Create a new branch: `git checkout -b feat/add-new-site`.
+
+Commit your changes: `git commit -m "feat: added Example.com support" `.
+
+## Push and open a Pull Request.</p>
 
 ### 📊 Data Management
 
-## <p>The generated audit_results.csv is designed for privacy professionals who use Google Sheets to track deletion progress across multiple identities.</p>
+ <p>The generated audit_results.csv is designed for privacy professionals who use Google Sheets to track deletion progress across multiple identities.</p>
+
+---
 
 ### ⚖️ License & Disclaimer
 

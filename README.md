@@ -32,7 +32,7 @@ pip install .
 deleteme your_username
 
 # Example:
-deleteme surfruit
+deleteme potus
 ```
 
 ---

@@ -1,0 +1,20 @@
+# База даних сайтів: Назва -> (Шаблон пошуку, Посилання на видалення)
+SITES_DATA = {
+    "GitHub": ("https://github.com/{}", "https://github.com/settings/delete"),
+    "Instagram": ("https://www.instagram.com/{}/", "https://www.instagram.com/accounts/remove/request/permanent/"),
+    "TikTok": ("https://www.tiktok.com/@{}", "https://www.tiktok.com/setting/delete-account"),
+    "Twitter": ("https://twitter.com/{}", "https://twitter.com/settings/deactivate"),
+    "Chess.com": ("https://www.chess.com/member/{}", "https://www.chess.com/settings/closure"),
+    "Pinterest": ("https://www.pinterest.com/{}/", "https://www.pinterest.com/settings/edit/"),
+    "Reddit": ("https://www.reddit.com/user/{}/", "https://www.reddit.com/settings/account"),
+    "Steam": ("https://steamcommunity.com/id/{}", "https://help.steampowered.com/en/wizard/HelpWithAccountData"),
+    "Duolingo": ("https://www.duolingo.com/profile/{}", "https://drive-thru.duolingo.com/"),
+    "SoundCloud": ("https://soundcloud.com/{}", "https://soundcloud.com/settings/extra"),
+    "Spotify": ("https://open.spotify.com/user/{}", "https://www.spotify.com/us/account/close/"),
+    "Twitch": ("https://www.twitch.tv/{}", "https://www.twitch.tv/settings/profile"),
+    "Medium": ("https://medium.com/@{}", "https://medium.com/me/settings"),
+    "Behance": ("https://www.behance.net/{}", "https://www.behance.net/account/delete"),
+    "Vimeo": ("https://vimeo.com/{}", "https://vimeo.com/settings/account/privacy"),
+    "Dribbble": ("https://dribbble.com/{}", "https://dribbble.com/account/delete"),
+    "Letterboxd": ("https://letterboxd.com/{}/", "https://letterboxd.com/settings/deactivate/"),
+}

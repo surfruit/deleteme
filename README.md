@@ -37,3 +37,48 @@ deleteme твій_нікнейм
 # Приклад:
 deleteme surfruit
 ```
+
+---
+### Features
+<p>🕵️‍♂️ Deep username search across 100+ platforms (socials, forums, gaming, paste sites…)</p>
+<p>🔗 Direct deletion links where they officially exist</p>
+<p>🛡️ Privacy-first — runs 100% locally, nothing sent anywhere</p>
+<p>⚡ Fast, lightweight, terminal-native</p>
+<p>🌈 Colored, readable output</p>
+
+---
+
+### Roadmap
+
+- [ ] Email-based scanning (in addition to username)
+- [ ] Data breach / leak checking (Have I Been Pwned style)
+- [x] Basic username search implemented
+- [ ] Auto-generated GDPR / CCPA deletion request templates
+- [ ] Simple local web UI
+
+---
+
+### Contributing – Adding a new site
+1. Open deleteme/sites.py
+2. Add entry to SITES dict:
+   ```"SERVICE_NAME": {
+    "url": "https://example.com/user/{}",
+    "delete_url": "https://example.com/account/delete",
+    "method": "GET",               # or "POST"
+    "notes": "May require deleting posts first"},
+   ```
+3.(optional) Adjust check_account_exists() if needed
+<br>
+4. Open PR: feat: added Example.com support
+
+---
+### License
+MIT
+---
+### Disclaimer
+For lawful use only — deleting your own accounts or ones you have explicit permission to delete.
+Not responsible for misuse, ToS violations or legal issues.
+Use responsibly. 👻
+---
+
+

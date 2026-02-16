@@ -1,8 +1,14 @@
 <div align="center">
-  <h1>👻 Deleteme v1.1.0</h1>
-  <p><b>The High-Performance OSINT Engine for Identity Discovery and Automated Data Erasure.</b></p>
-  ![Deleteme Banner](banner.png)
-  <p>Deleteme is an advanced, asynchronous username scanner designed to identify your digital footprint across 100+ platforms and provide ready-to-use GDPR Article 17 deletion requests.</p>
+ <h1>👻 Deleteme v1.1.0</h1>
+  <h2>The High-Performance OSINT Engine for Identity Discovery and Automated Data Erasure.</h2>
+  
+  <br>
+
+![Deleteme Banner](banner.png)
+
+  <br>
+  
+  <p>Deleteme is an advanced, asynchronous username scanner designed to identify your digital footprint across hundreds of platforms and provide ready-to-use GDPR Article 17 deletion requests.</p>
 
 ![Version](https://img.shields.io/badge/version-1.1.0-blue?style=for-the-badge&logo=python)
 ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
